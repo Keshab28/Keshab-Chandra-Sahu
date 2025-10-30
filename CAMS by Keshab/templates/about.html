@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAMS - About</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <h1>
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="CCTV Icon" class="nav-logo">
+          CAMS
+        </h1>
+        <span class="nav-subtitle">Campus Area Management System</span>
+      </div>
+      <div class="nav-menu">
+        <a href="/" class="nav-link">Dashboard</a>
+        <a href="/about" class="nav-link active">About</a>
+        <a href="/credits" class="nav-link">Credits</a>
+        <div class="nav-user">
+          <span>Hello, {{ username }}!</span>
+          <a href="/logout" class="nav-link logout">Logout</a>
+        </div>
+      </div>
+      <div class="nav-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/" class="mobile-link">Dashboard</a>
+    <a href="/about" class="mobile-link active">About</a>
+    <a href="/credits" class="mobile-link">Credits</a>
+    <div class="mobile-user">
+      <span>Hello, {{ username }}!</span>
+      <a href="/logout" class="mobile-link logout">Logout</a>
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <main class="main-content">
+    <div class="about-container">
+      <h1 class="page-title">About CAMS</h1>
+
+      <div class="about-section">
+        <h2>What is CAMS?</h2>
+        <p>
+          The Campus Area Management System (CAMS) is an intelligent real-time
+          monitoring solution designed to track and display the occupancy
+          status of various areas across campus facilities.
+        </p>
+      </div>
+
+      <div class="about-section">
+        <h2>Key Features</h2>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-icon">👁️</span>
+            <div>
+              <h3>Real-Time Monitoring</h3>
+              <p>
+                Live updates on area occupancy using advanced machine learning
+                algorithms
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon">📊</span>
+            <div>
+              <h3>Smart Status Indicators</h3>
+              <p>
+                Color-coded status system for quick visual identification of
+                area availability
+              </p>
+            </div>
+          </li>
+          <!-- <li>
+            <span class="feature-icon">📱</span>
+            <div>
+              <h3>Responsive Design</h3>
+              <p>Access from any device - desktop, tablet, or mobile</p>
+            </div>
+          </li> -->
+          <li>
+            <span class="feature-icon">🔄</span>
+            <div>
+              <h3>Auto-Refresh</h3>
+              <p>Dashboard updates automatically every 10 seconds</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="about-section">
+        <h2>How It Works</h2>
+        <div class="status-guide">
+          <div class="status-item">
+            <span class="status-badge empty">Empty</span>
+            <p>No people detected in the area</p>
+          </div>
+          <div class="status-item">
+            <span class="status-badge open">Open</span>
+            <p>1-5 people - Area is available</p>
+          </div>
+          <div class="status-item">
+            <span class="status-badge busy">Busy</span>
+            <p>6-15 people - Area is moderately occupied</p>
+          </div>
+          <div class="status-item">
+            <span class="status-badge closed">Closed</span>
+            <p>More than 15 people - Area is at capacity</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-section">
+        <h2>Technology Stack</h2>
+        <p>CAMS is built using cutting-edge technologies:</p>
+        <ul>
+          <li>Machine Learning powered people detection</li>
+          <li>Flask backend for robust API services</li>
+          <li>SQLite database for efficient data storage</li>
+          <li>Modern HTML5, CSS3, and JavaScript frontend</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      const mobileMenu = document.getElementById("mobileMenu");
+      mobileMenu.classList.toggle("active");
+    }
+  </script>
+</body>
+
+</html>

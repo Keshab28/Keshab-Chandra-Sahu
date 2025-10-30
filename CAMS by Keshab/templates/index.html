@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMS - Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="CCTV Icon" class="nav-logo">
+                    CAMS
+                </h1>
+                <span class="nav-subtitle">Campus Area Management System</span>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link active">Dashboard</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/credits" class="nav-link">Credits</a>
+                <div class="nav-user">
+                    <span>Hello, {{ username }}!</span>
+                    <a href="/logout" class="nav-link logout">Logout</a>
+                </div>
+            </div>
+            <div class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/" class="mobile-link active">Dashboard</a>
+        <a href="/about" class="mobile-link">About</a>
+        <a href="/credits" class="mobile-link">Credits</a>
+        <div class="mobile-user">
+            <span>Hello, {{ username }}!</span>
+            <a href="/logout" class="mobile-link logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="dashboard-header">
+            <h2>Campus Areas Status</h2>
+            <div class="last-refresh">
+                <span id="refreshTime">Last updated: Just now</span>
+                <div class="refresh-indicator"></div>
+            </div>
+        </div>
+
+        <div class="areas-grid" id="areasGrid">
+            <!-- Area cards will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <div class="center">
+      <button type="button">
+        <div class="top">Made by Keshab Chandra Sahu.</div>
+        <div class="bottom"></div>
+      </button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

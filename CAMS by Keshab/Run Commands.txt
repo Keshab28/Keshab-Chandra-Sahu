@@ -1,0 +1,22 @@
+<--- Running all these on a CMD terminal can make the work done ✅ --->
+//for new terminals 👇
+
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cpu
+python init_db.py
+python app.py
+Running on http://127.0.0.1:5000
+Username : testuser
+Password : password123
+
+//different run commands for yolo_detect 👇
+
+python yolo_detect.py --model my_model.pt --source 0
+python yolo_detect.py --model my_model.pt --source "http://192.168.1.34:4747/video"
+python yolo_detect.py --model my_model.pt --source demo.mp4 --resolution 1280x720 --record
+
+python yoloTest.py --model my_model.pt --source "http://192.168.1.34:4747/video"
+python yoloTest.py --model my_model.pt --source "C:\Users\kesha\Documents\CAMS by Keshab\LM_Arena\Assets\People2.mp4" --resolution 1280x720
+
+line : 11, 146-169, 393 (yolo_library.py)

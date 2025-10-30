@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMS - Credits</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="CCTV Icon" class="nav-logo">
+                    CAMS
+                </h1>
+                <span class="nav-subtitle">Campus Area Management System</span>
+            </div>
+            <div class="nav-menu">
+                <a href="/" class="nav-link">Dashboard</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/credits" class="nav-link active">Credits</a>
+                <div class="nav-user">
+                    <span>Hello, {{ username }}!</span>
+                    <a href="/logout" class="nav-link logout">Logout</a>
+                </div>
+            </div>
+            <div class="nav-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/" class="mobile-link">Dashboard</a>
+        <a href="/about" class="mobile-link">About</a>
+        <a href="/credits" class="mobile-link active">Credits</a>
+        <div class="mobile-user">
+            <span>Hello, {{ username }}!</span>
+            <a href="/logout" class="mobile-link logout">Logout</a>
+        </div>
+    </div>
+
+    <!-- Credits Content -->
+    <main class="main-content">
+        <div class="credits-container">
+            <h1 class="page-title">Meet the Developer</h1>
+
+            <div class="developer-card">
+                <div class="developer-avatar">
+                    <div class="avatar-placeholder">KCS</div>
+                </div>
+
+                <h2 class="developer-name">Keshab Chandra Sahu & team</h2>
+                <p class="developer-title">Full Stack Developer & ML Engineer</p>
+
+                <div class="developer-bio">
+                    <p>Passionate about creating intelligent systems that make campus life easier and more efficient.
+                        Specialized in computer vision, web development, and creating seamless user experiences.</p>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Get in Touch</h3>
+
+                    <div class="contact-grid">
+                        <a href="tel:+91 8260464490" class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+91 82604 64490</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:kbsu0007@gmail.com" class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <div>
+                                <strong>Email</strong>
+                                <p>kbsu0007@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/keshab-chandra-sahu-75b354315/" target="_blank" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <p>linkedin.com/in/keshab-chandra-sahu</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Keshab28" target="_blank" class="contact-item">
+                            <span class="contact-icon">💻</span>
+                            <div>
+                                <strong>GitHub</strong>
+                                <p>github.com/Keshab28</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://x.com/keshab_ch_sahu" target="_blank" class="social-link twitter">
+                        <span> 𝕏 </span>
+                    </a>
+                    <a href="https://www.instagram.com/keshab.ch.sahu/" target="_blank" class="social-link instagram">
+                        <span> 🅾 </span>
+                    </a>
+                    <a href="https://www.youtube.com/@keshab_ch_sahu" target="_blank" class="social-link facebook">
+                        <span> ▶ </span>
+                    </a>
+                </div>
+
+                <div class="credits-footer">
+                    <p>© 2025 CAMS | Your Digital Campus Hub.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
