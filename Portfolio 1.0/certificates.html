@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills and Certificates</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="certificates.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="color: black;">Skills & Certificates</h1>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Skill Name</th>
+              <th>Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="skill-name">Introduction to HTML</td>
+              <td>
+                <a href="https://drive.google.com/file/d/1s-3WtCEYq3UadzGb8IuD1Rqi19X5UUGD/view?usp=drive_link" class="download" target="_blank">Certificate 📄</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="skill-name">Programming Foundation with JavaScript, HTML and CSS</td>
+              <td>
+                <a href="https://drive.google.com/file/d/1s7OA8rgitQnBk-3DvpEDsXpcQlqIMuZR/view?usp=drive_link" class="download" target="_blank">Certificate 📄</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="skill-name">Cybersecurity Essentials</td>
+              <td>
+                <a href="https://drive.google.com/file/d/1s2fn2um_a-sX_GSx4Fk4SBJW8bFw3OTX/view?usp=drive_link" class="download" target="_blank">Certificate 📄</a>
+              </td>
+            </tr>
+            <tr>
+              <td class="skill-name">Core Java</td>
+              <td>
+                <a href="https://drive.google.com/file/d/1s1zYgtSYGIzA2l-CtAnqgb0iK9b1OgW2/view?usp=drive_link" class="download" target="_blank">Certificate 📄</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="center">
+      <button type="button">
+        <div class="top">Made by Keshab Chandra Sahu.</div>
+        <div class="bottom"></div>
+      </button>
+    </div>
+
+    <script>
+      function addNewSkill() {
+        const skillName = prompt("Enter skill name:");
+        const certificateUrl = prompt("Enter certificate URL:");
+
+        if (skillName && certificateUrl) {
+          const tbody = document.querySelector("tbody");
+          const newRow = document.createElement("tr");
+
+          newRow.innerHTML = `
+                    <td class="skill-name">${skillName}</td>
+                    <td>
+                        <a href="${certificateUrl}" class="certificate-link" target="_blank">View Certificate</a>
+                    </td>
+                `;
+
+          tbody.appendChild(newRow);
+        }
+      }
+
+      // Add click animation to certificate links
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll(".certificate-link");
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            this.style.transform = "scale(0.95)";
+            setTimeout(() => {
+              this.style.transform = "translateY(-3px)";
+            }, 100);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

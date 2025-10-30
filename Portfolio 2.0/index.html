@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keshab Chandra Sahu - Computer Science Student at UCPES, Berhampur.">
+    <title>Keshab Ch. Sahu | Portfolio</title>
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="Keshab Chandra Sahu, portfolio, web design, development, UX/UI" />
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">&lt;Keshab/&gt;</div>
+            <div class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="navMenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="YOUR_GDRIVE_LINK_HERE" target="_blank" class="resume-btn">
+                <i class="fas fa-file-download"></i>
+                <span>Resume</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building projects, one idea at a time.</h1>
+                <p>Hi, I'm <u> <b> Keshab Chandra Sahu </b> </u> — a Computer Science student with a curious mind and a
+                    growing
+                    passion
+                    for technology.
+                    I love turning small ideas into projects that teach me something new every time.</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Get to know me better</p>
+            </div>
+
+            <div class="about-wrapper">
+                <!-- Left Side - Dynamic Image -->
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-glow"></div>
+                        <img src="assets/Keshab.jpg" alt="Keshab Chandra Sahu">
+                        <div class="floating-badge">
+                            <span>💻</span>
+                            <p>CSE Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side - Details & Fun Facts -->
+                <div class="about-details">
+                    <div class="details-card">
+                        <h3>Hello! I'm Keshab 👋</h3>
+                        <p>
+                            I'm currently pursuing a <strong>Diploma in Computer Science & Engineering</strong> at Uma
+                            Charan Patnaik
+                            Engineering School, Brahmapur. I enjoy exploring new technologies, solving problems, and
+                            building projects that make learning fun.
+                        </p>
+                        <p>
+                            My goal is to continue growing as a developer — contributing to real-world projects and
+                            eventually pursuing <strong>B.Tech in OUTR, Bhubaneswar</strong> to deepen my knowledge in
+                            my
+                            field.
+                        </p>
+
+                        <!-- Quick Info Grid -->
+                        <div class="quick-info">
+                            <div class="info-item">
+                                <span class="info-icon">🎓</span>
+                                <div>
+                                    <p class="info-label">Education</p>
+                                    <p class="info-value">Diploma in CSE</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🇮🇳</span>
+                                <div>
+                                    <p class="info-label">Location</p>
+                                    <p class="info-value">Brahmapur, Odisha, India</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">💼</span>
+                                <div>
+                                    <p class="info-label">Status</p>
+                                    <p class="info-value">Open to Internships</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon">🚀</span>
+                                <div>
+                                    <p class="info-label">Focus</p>
+                                    <p class="info-value">Web Development & Learning</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fun Facts Cards -->
+                    <div class="fun-facts">
+                        <h4>Fun Facts About Me</h4>
+                        <div class="fun-facts-grid">
+                            <div class="fun-fact-card">
+                                <div class="fact-icon">☕</div>
+                                <p class="fact-text">Code better with coffee</p>
+                            </div>
+                            <div class="fun-fact-card">
+                                <div class="fact-icon">🎮</div>
+                                <p class="fact-text">Gamer at heart</p>
+                            </div>
+                            <div class="fun-fact-card">
+                                <div class="fact-icon">📚</div>
+                                <p class="fact-text">Lifelong learner</p>
+                            </div>
+                            <div class="fun-fact-card">
+                                <div class="fact-icon">🌙</div>
+                                <p class="fact-text">Night owl developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+                <p>Here are some of the projects I've built while learning and experimenting with different
+                    technologies.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-category">Academic Project</div>
+                    <h3>Campus Area Management System</h3>
+                    <p>
+                        CAMS - Monitoring the live status of an area in a campus by using a machine learned model and
+                        showing the number of people present at the moment on the web.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">HTML</span>
+                        <span class="tool-tag">CSS</span>
+                        <span class="tool-tag">JavaScript</span>
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">SQLite</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub →</a>
+                </div>
+
+                <!-- Project 2 - Add your own -->
+                <div class="project-card">
+                    <div class="project-category">Web Development</div>
+                    <h3>Portfolio</h3>
+                    <p>
+                        A simple and clean looking website built for showcasing myself professionally to the world along
+                        with my biodata from birth till date.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">HTML</span>
+                        <span class="tool-tag">CSS</span>
+                        <span class="tool-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub →</a>
+                </div>
+
+                <!-- Project 3 - Add your own -->
+                <div class="project-card">
+                    <div class="project-category">Experiment</div>
+                    <h3>AZEx - A to Z Experiment</h3>
+                    <p>
+                        A system that can act like a money manager as well as a scientific calculator (built using only
+                        Java).
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Java</span>
+                    </div>
+                    <a href="#" class="project-link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills</h2>
+                <p>Technologies and tools I've worked with during my learning journey.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python (Flask)</span>
+                        <span class="skill-item">Git Bash</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">HTML</span>
+                        <span class="skill-item">CSS</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">PHP</span>
+                        <span class="skill-item">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-item">Problem Solving</span>
+                        <span class="skill-item">Curiosity</span>
+                        <span class="skill-item">Teamwork</span>
+                        <span class="skill-item">Quick Learner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <!-- <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My academic background and qualifications.</p>
+            </div>
+
+            <div class="education-card">
+                <h3>Class 10th</h3>
+                <p class="institution">K.C. Public School, Brahmapur</p>
+                <p class="board">CBSE New Delhi</p>
+                <span class="duration">2022 - 2023</span>
+            </div>
+            <div class="education-card">
+                <h3>Diploma in Computer Science & Engineering</h3>
+                <p class="institution">Uma Charan Patnaik Engineering School, Brahmapur</p>
+                <p class="board">SCTEVT Odisha</p>
+                <span class="duration">2023 - 2026</span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <p>My academic background and qualifications.</p>
+            </div>
+
+            <!-- NEW: Timeline Wrapper -->
+            <div class="education-timeline-wrapper">
+                <!-- Vertical Progress Line -->
+                <div class="timeline-progress">
+                    <div class="progress-line"></div>
+                    <div class="progress-line-fill"></div>
+                </div>
+
+                <!-- Timeline Items -->
+                <div class="timeline-items">
+                    <!-- Education Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot">
+                            <div class="dot-inner"></div>
+                            <div class="dot-pulse"></div>
+                        </div>
+                        <div class="education-card">
+                            <div class="timeline-badge">2022</div>
+                            <h3>Class 10th</h3>
+                            <p class="institution">K.C. Public School, Brahmapur</p>
+                            <p class="board">CBSE New Delhi</p>
+                            <span class="duration">2022 - 2023</span>
+                        </div>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot active">
+                            <div class="dot-inner"></div>
+                            <div class="dot-pulse"></div>
+                        </div>
+                        <div class="education-card">
+                            <div class="timeline-badge current">Current</div>
+                            <h3>Diploma in Computer Science & Engineering</h3>
+                            <p class="institution">Uma Charan Patnaik Engineering School, Brahmapur</p>
+                            <p class="board">SCTEVT Odisha</p>
+                            <span class="duration">2023 - 2026</span>
+                            <div class="progress-indicator">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 66%;">
+                                        <span class="progress-text">66% Complete</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Future Education (Optional) -->
+                    <div class="timeline-item future">
+                        <div class="timeline-dot future-dot">
+                            <div class="dot-inner"></div>
+                            <div class="dot-pulse"></div>
+                        </div>
+                        <div class="education-card">
+                            <div class="timeline-badge future-badge">Upcoming</div>
+                            <h3>B.Tech (Goal)</h3>
+                            <p class="institution">OUTR, Bhubaneswar</p>
+                            <p class="board">Target Institution</p>
+                            <span class="duration">2026 onwards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's connect! I'm always open to learning opportunities, collaborations, or internships.</p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:keshabchandrasahu06022007@gmail.com" class="contact-item">
+                        <span>✉️</span>
+                        <span class="contact-label">keshabchandrasahu06022007@gmail.com</span>
+                    </a>
+                    <a href="tel:+91 82604 64490" class="contact-item">
+                        <span>📞</span>
+                        <span class="contact-label">Cell : +91 82604 64490</span>
+                    </a>
+                    <!-- <a href="https://github.com/yourusername" target="_blank" class="contact-item">
+                        <span>💻</span>
+                        <span class="contact-label">GitHub Profile</span>
+                    </a> -->
+                </div>
+                <div class="social-media-section">
+                    <h3 class="social-heading">Connect With Me</h3>
+                    <p class="social-subheading">Follow my journey across platforms</p>
+
+                    <div class="modern-social-links">
+                        <a href="https://www.linkedin.com/in/keshab-chandra-sahu-75b354315/" target="_blank"
+                            class="modern-social-card linkedin" data-platform="LinkedIn">
+                            <div class="social-icon-wrapper">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-name">LinkedIn</span>
+                                <span class="social-handle">@keshab-ch-sahu</span>
+                            </div>
+                            <div class="social-hover-effect"></div>
+                        </a>
+
+                        <a href="https://github.com/Keshab28" target="_blank" class="modern-social-card github"
+                            data-platform="GitHub">
+                            <div class="social-icon-wrapper">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-name">GitHub</span>
+                                <span class="social-handle">@Keshab28</span>
+                            </div>
+                            <div class="social-hover-effect"></div>
+                        </a>
+
+                        <a href="https://www.youtube.com/@keshab_ch_sahu" target="_blank"
+                            class="modern-social-card youtube" data-platform="YouTube">
+                            <div class="social-icon-wrapper">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-name">YouTube</span>
+                                <span class="social-handle">@keshab_ch_sahu</span>
+                            </div>
+                            <div class="social-hover-effect"></div>
+                        </a>
+
+                        <a href="https://www.instagram.com/keshab.ch.sahu/" target="_blank"
+                            class="modern-social-card instagram" data-platform="Instagram">
+                            <div class="social-icon-wrapper">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-name">Instagram</span>
+                                <span class="social-handle">@keshab.ch.sahu</span>
+                            </div>
+                            <div class="social-hover-effect"></div>
+                        </a>
+
+                        <a href="https://x.com/keshab_ch_sahu" target="_blank" class="modern-social-card twitter"
+                            data-platform="X (Twitter)">
+                            <div class="social-icon-wrapper">
+                                <!-- <i class="fab fa-twitter"></i> -->
+                                <svg viewBox="0 0 24 24" fill="currentColor" style="width: 1.8rem; height: 1.8rem;">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-name">X (Twitter)</span>
+                                <span class="social-handle">@keshab_ch_sahu</span>
+                            </div>
+                            <div class="social-hover-effect"></div>
+                        </a>
+
+                        <a href="#" target="_blank" class="modern-social-card telegram" data-platform="Telegram">
+                            <div class="social-icon-wrapper">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="social-info">
+                                <span class="social-name">Telegram</span>
+                                <span class="social-handle">@keshab_ch_sahu</span>
+                            </div>
+                            <div class="social-hover-effect"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Keshab. Built with passion and curiosity.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuToggle.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        const navLinks = document.querySelectorAll('nav ul li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                navMenu.classList.remove('active');
+                mobileMenuToggle.classList.remove('active');
+            }
+        });
+
+        // Custom Cursor Effect
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+
+        let mouseX = 0, mouseY = 0;
+        let outlineX = 0, outlineY = 0;
+
+        // Track mouse position
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            // Dot follows immediately
+            cursorDot.style.left = mouseX + 'px';
+            cursorDot.style.top = mouseY + 'px';
+            cursorDot.style.opacity = '1';
+            cursorOutline.style.opacity = '1';
+        });
+
+        // Smooth outline animation
+        function animateOutline() {
+            outlineX += (mouseX - outlineX) * 0.15;
+            outlineY += (mouseY - outlineY) * 0.15;
+
+            cursorOutline.style.left = outlineX + 'px';
+            cursorOutline.style.top = outlineY + 'px';
+
+            requestAnimationFrame(animateOutline);
+        }
+        animateOutline();
+
+        // Hide cursor when leaving window
+        document.addEventListener('mouseleave', () => {
+            cursorDot.style.opacity = '0';
+            cursorOutline.style.opacity = '0';
+        });
+
+        // Scale effect on hover
+        const hoverElements = document.querySelectorAll('a, button, .project-card, .skill-item');
+        hoverElements.forEach(elem => {
+            elem.addEventListener('mouseenter', () => {
+                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
+            });
+            elem.addEventListener('mouseleave', () => {
+                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
+            });
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        // Show/hide button based on scroll position
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top when clicked
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                    });
+                }
+            });
+        });
+
+        // Add transition to fact text
+        document.querySelectorAll('.fact-text').forEach(text => {
+            text.style.transition = 'transform 0.3s ease';
+        });
+
+        // Modern Social Cards - Interactive Effects
+        const socialCards = document.querySelectorAll('.modern-social-card');
+
+        socialCards.forEach(card => {
+            // Create floating particles on hover
+            card.addEventListener('mouseenter', function (e) {
+                createParticles(this);
+            });
+
+            // Add click ripple effect
+            card.addEventListener('click', function (e) {
+                const ripple = document.createElement('div');
+                ripple.className = 'click-ripple';
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                ripple.style.cssText = `
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: translate(-50%, -50%);
+            left: ${x}px;
+            top: ${y}px;
+            pointer-events: none;
+            animation: rippleEffect 0.6s ease-out;
+            z-index: 10;
+        `;
+
+                this.appendChild(ripple);
+
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Create floating particles
+        function createParticles(element) {
+            for (let i = 0; i < 3; i++) {
+                setTimeout(() => {
+                    const particle = document.createElement('div');
+                    particle.className = 'social-particle';
+                    particle.style.cssText = `
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background: var(--heliotrope);
+                border-radius: 50%;
+                pointer-events: none;
+                left: ${Math.random() * 100}%;
+                top: ${Math.random() * 100}%;
+                opacity: 0;
+                animation: particleFloat 1.5s ease-out forwards;
+                z-index: 0;
+            `;
+                    element.appendChild(particle);
+
+                    setTimeout(() => particle.remove(), 1500);
+                }, i * 100);
+            }
+        }
+
+        // Add CSS animations for ripple and particles
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = `
+    @keyframes rippleEffect {
+        0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(40);
+            opacity: 0;
+        }
+    }
+
+    @keyframes particleFloat {
+        0% {
+            transform: translateY(0) scale(0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-50px) scale(1);
+            opacity: 0;
+        }
+    }
+`;
+        document.head.appendChild(styleSheet);
+
+        // Tooltip on hover
+        socialCards.forEach(card => {
+            const platform = card.getAttribute('data-platform');
+
+            card.addEventListener('mouseenter', function (e) {
+                const tooltip = document.createElement('div');
+                tooltip.className = 'social-tooltip';
+                tooltip.textContent = `Visit my ${platform}`;
+                tooltip.style.cssText = `
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%) scale(0);
+            background: rgba(16, 0, 43, 0.95);
+            color: var(--heliotrope);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            pointer-events: none;
+            border: 1px solid var(--heliotrope);
+            z-index: 100;
+            animation: tooltipAppear 0.3s ease forwards;
+        `;
+
+                this.style.position = 'relative';
+                this.appendChild(tooltip);
+            });
+
+            card.addEventListener('mouseleave', function () {
+                const tooltip = this.querySelector('.social-tooltip');
+                if (tooltip) tooltip.remove();
+            });
+        });
+
+        const tooltipStyle = document.createElement('style');
+        tooltipStyle.textContent = `
+            @keyframes tooltipAppear {
+                to {
+                    transform: translateX(-50%) scale(1);
+                }
+            }
+        `;
+        document.head.appendChild(tooltipStyle);
+
+        // ===== EDUCATION TIMELINE ANIMATION =====
+
+        // Animate timeline on scroll into view
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Trigger progress fill animation
+                    const progressFill = entry.target.querySelector('.progress-fill');
+                    if (progressFill) {
+                        const targetWidth = progressFill.style.width;
+                        progressFill.style.width = '0%';
+                        setTimeout(() => {
+                            progressFill.style.width = targetWidth;
+                        }, 100);
+                    }
+                }
+            });
+        }, {
+            threshold: 0.3
+        });
+
+        // Observe education section
+        const educationSection = document.querySelector('#education');
+        if (educationSection) {
+            timelineObserver.observe(educationSection);
+        }
+    </script>
+</body>
+
+</html>
